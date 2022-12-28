@@ -1,4 +1,6 @@
-import './Navbar.css'
+import "./Navbar.css";
+import CartWidget from "../CartWidget/CartWidget";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 
 const Navbar = () => {
@@ -6,6 +8,8 @@ const Navbar = () => {
     <nav className="Navbar">
       <h1 className="Titulo">Levanner</h1>
       <div>
+        <CartWidget />
+        <ItemListContainer greeting="!Bienvenidos A La Perfumeria Levanner¡"/>
         <button>Perfumes para hombres</button>
         <button>Perfumes para mujeres</button>
         <button>Todos los perfumes</button>
