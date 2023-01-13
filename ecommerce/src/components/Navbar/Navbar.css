@@ -1,7 +1,27 @@
 .Navbar {
-  background-color: aqua;
+  background-color: rgb(63, 197, 63);
+  height: 50px;
+  padding: 5px 0;
 }
 
-.button {
+.Navbar button {
+  margin-top: 15px;
+  position: relative;
+  margin-left: 30px;
+  padding: 5px;
+  right: 50px;
+  background-color: black;
+  color: #ffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+
+
+.Titulo {
+  margin-left: 10px;
+  margin-top: -5px;
+  float: left;
+  position: relative;
+  font-size: 35px;
   cursor: pointer;
 }
