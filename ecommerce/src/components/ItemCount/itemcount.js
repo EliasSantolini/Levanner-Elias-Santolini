@@ -1,26 +1,31 @@
 import { useState } from "react";
 
-const ItemCount = () => {
-  const [count, setCount] = useState(0);
+const ItemCount = ({ initial = 1, stock }) => {
+  const [count, setCount] = useState(1);
 
   const increment = () => {
-    setCount(count + 1);
+    if (count < stock) {
+      setCount(count + 1);
+    }
   };
 
   const decrement = () => {
-    setCount(count - 1);
+    if (count > 1) {
+      setCount(count - 1);
+    }
   };
 
-  const reset = () => {
-    setCount(0);
-  };
+  /* /*   const reset = () => {
+    setCount(0); 
+  }; */
   return (
     <div>
       <h1>Contador</h1>
       <h2>{count}</h2>
       <button onClick={decrement}>-</button>
       <button onClick={increment}>+</button>
-      <button onClick={reset}>reset</button>
+      {/*     <button onClick={reset}>reset</button> */}
+      <button>Agregar al carrito</button>
     </div>
   );
 };

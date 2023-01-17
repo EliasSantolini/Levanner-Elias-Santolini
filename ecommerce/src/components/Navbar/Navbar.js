@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import "../CartWidget/CartWidget.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,9 +10,13 @@ const Navbar = () => {
         <div>
           <h1 className="Titulo">Levanner</h1>
           <CartWidget />
-          <button>Perfumes para hombres</button>
-          <button>Perfumes para mujeres</button>
-          <button> Ver Todos</button>
+          <Link to="/category/hombre" style={{ margin: 10}}>
+            Perfumes para hombres
+          </Link>
+          <Link to="/category/mujer">Perfumes para mujeres</Link>
+          <Link to="/" style={{ margin: 10 }}>
+            Ver Todos
+          </Link>
         </div>
       </nav>
     </div>
