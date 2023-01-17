@@ -7,7 +7,7 @@ const ItemDetail = ({ id, name, img, price, category, desc, stock }) => {
       <p>{category}</p>
       <img src={img} alt={name} style={{ width: 200 }} />
       <p>$ {price}</p>
-      <p>Descripcion {desc}</p>
+      <p>Descripcion: {desc}</p>
       <ItemCount stock={stock} />
     </div>
   );
