@@ -1,4 +1,4 @@
-import ItemCount from "../ItemCount/itemcount";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ id, name, img, price, category, desc, stock }) => {
   return (
