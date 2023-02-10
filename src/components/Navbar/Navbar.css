@@ -1,0 +1,27 @@
+.Navbar {
+  background-color: rgb(224, 64, 0);
+  height: 50px;
+  padding: 5px 0;
+}
+
+.Link {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  padding: 4px;
+  right: 50px;
+  top: 15px;
+  background-color: black;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.Titulo {
+  margin-left: 10px;
+  margin-top: -5px;
+  float: left;
+  position: relative;
+  font-size: 35px;
+  cursor: pointer;
+  color: black;
+}
